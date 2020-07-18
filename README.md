@@ -1,1 +1,1 @@
-# g1edycjarozszerzona.themodders.org
+# g1er.themodders.org
