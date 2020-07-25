@@ -1,0 +1,37 @@
+title: theModders.org
+description: Community of game modders and developers
+keywords: theModders, Gothic, Czas Zapłaty, mods, modyfikacje, game dev, gry komputerowe, pc, rpg
+theme: null
+layouts_dir: ./server/templates
+includes_dir: ./server/templates
+paginate: 10
+paginate_path: "news/:num"
+permalink: news/:year-:month-:day-:title
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "download"
+      type: "pages"
+    values:
+      layout: "redirect"
+  -
+    scope:
+      path: "server"
+    values:
+      layout: "raw"
+plugins:
+  - github-pages
+  - jekyll-sitemap
+  - jekyll-feed
